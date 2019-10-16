@@ -1,3 +1,27 @@
+[tool.poetry]
+name = "exness-car-channel"
+version = "0.1.0"
+description = ""
+authors = ["arseny.kuznetsov <arseny.kuznetsov@exness.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+python-telegram-bot = "^12.2"
+peewee = "^3.11"
+django-environ = "^0.4.5"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.730.0"
+black = "=19.3b0"
+flake8 = "^3.7"
+pylint = "^2.4"
+isort = "^4.3"
+pre-commit = "^1.18"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
 [tool.black]
 line-length = 120
 target-version = ['py37', 'py38']

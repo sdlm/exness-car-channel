@@ -3,7 +3,7 @@ set -e
 
 case "$1" in
     "run")
-        exec python -m ...
+        exec python -m src.main
     ;;
     *)
         exec ${@}
