@@ -8,5 +8,7 @@ COPY pyproject.toml ./
 RUN poetry config settings.virtualenvs.create false && \
     poetry install --no-dev --no-ansi --no-interaction
 
+COPY docker-entrypoint.sh ./
+
 ENTRYPOINT ["./docker-entrypoint.sh"]
 CMD ["run"]
